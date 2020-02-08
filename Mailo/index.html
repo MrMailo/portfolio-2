@@ -7,7 +7,9 @@
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,8 +18,8 @@
 			<div class="header ">
 			<img src="img/logo.png" alt="logo" class="logo">
 
-			<nav class="menu__list-header">
-				<a href="#" class="menu__link-list">Описание</a>
+			<nav class="menu__list-header ">
+				<a href="#" class="menu__link-list ">Описание</a>
 				<a href="#" class="menu__link-list">Трейлер</a>
 				<a href="#" class="menu__link-list">Отзывы</a>
 			</nav>
@@ -38,8 +40,8 @@
 		<div class="container">
 			<div class="main__content">
 				<div class="content">
-					<span class="gener">2019, фэнтези</span>
-					<div class="rating">
+					<span class="gener wow fadeInLeft" data-wow-duration="0.2s">2019, фэнтези</span>
+					<div class="rating wow fadeInLeft"data-wow-duration="0.3s">
 						<div class="ratign__stars">
 							<img src="img/star.svg" alt="" class="star">
 							<img src="img/star.svg" alt="" class="star">
@@ -59,14 +61,14 @@
 						<!-- /.rating__number -->
 					</div>
 					<!-- /rating -->
-					<h1 class="main__title">Ведьмак</h1>
-					<p class="main__descripton">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс. </p>
-					<button class="button">Смотреть онлайн</button>
+					<h1 class="main__title wow fadeInLeft"data-wow-duration="0.4s">Ведьмак</h1>
+					<p class="main__descripton wow fadeInLeft"data-wow-duration="0.5s">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс. </p>
+					<a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU"class="button wow fadeInLeft" data-wow-duration="0.6s">Смотреть трейлер </a>
 				</div>
 				<!-- /.main__content -->
-				<button class="play">
-					<img src="img/social/play.svg" alt="play" class="play__img">
-				</button>
+				<a data-fancybox href="https://www.youtube.com/watch?v=Bw6XSzDTeTU" class="play wow flip">
+					<img src="img/social/play.svg" alt="play" class="play__img ">
+				</a>
 				<!-- /.main__play-button -->
 			</div>
 			
@@ -154,9 +156,9 @@
 
 	</footer>
 
-
-
-
+	<script src="js/wow.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
 </html>
